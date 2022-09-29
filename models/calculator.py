@@ -1,4 +1,3 @@
-from email import header
 import streamlit as st
 import pandas as pd
 from ftx_api import connect
