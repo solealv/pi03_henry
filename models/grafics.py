@@ -15,14 +15,15 @@ def app():
 
     with price_container:
         
-        cripto_list = ['BTC (Bitcoin)', 'ETH (Ethereum)', 'USDT (Tether)', 'BNB (BNB)', 'XRP (XRP)', 'SOL (Solana)', 'DOGE (Dogecoin)', 'DOT (Polkadot)', 'Dai (DAI)', 'MATIC (Polygon)']
+        cripto_list = ['BTC (Bitcoin)', 'ETH (Ethereum)', 'USDT (Tether)', 'BNB (BNB)', 'XRP (Ripple)', 'SOL (Solana)', 'DOGE (Dogecoin)', 'DOT (Polkadot)', 'Dai (DAI)', 'MATIC (Polygon)']
         name_list = ['BTC/USD', 'ETH/USD', 'USDT/USD', 'BNB/USD', 'XRP/USD', 'SOL/USD', 'DOGE/USD', 'DOT/USD', 'DAI/USD', 'MATIC/USD']
         
         s_cripto = st.selectbox('La criptomoneda que quieres ver:', cripto_list)
         index = cripto_list.index(s_cripto)
 
         df = connect.grafic_data(name_list[index])
-        
+        st.write(connect.ref_list[index])
+
         st.subheader('Precios historicos')
         fig = go.Figure([
             go.Scatter(

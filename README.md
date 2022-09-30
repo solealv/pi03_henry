@@ -24,6 +24,7 @@ El repositorio cuenta con los siguientes archivos y carpetas que componen la apl
 * models: esta carpeta contiene dos archivos, cada cual corresponde a las "hojas" del Dashboard. Se crearon dos hojas, una con los graficos de los datos y otra con la calculadora.<br>
 
 Decidí basar el analisis en las 10 monedas que poseen la mayor capitalizacion del mercado (segun la pagina  coinmarketcap.com) y que se encuentren en la plataforma de FTX. Estas son:
+
 * BTC (Bitcoin)
 * ETH(Ethereum)
 * USDT (Tether)
@@ -34,3 +35,5 @@ Decidí basar el analisis en las 10 monedas que poseen la mayor capitalizacion d
 * DOT (Polkadot)
 * Dai (DAI)
 * MATIC (Polygon)
+
+A su vez, realicé el deploy del Dashboard en la nube que provee Streamlit, el cual se puede ver a traves del siguiente link: https://solealv-pi03-henry-app-lt15ff.streamlitapp.com/
