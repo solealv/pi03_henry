@@ -23,7 +23,7 @@ def app():
 
         df = connect.grafic_data(name_list[index])
         st.write(connect.ref_list[index])
-
+        st.write('En los siguientes gráficos, puedes hacer zoom con el cursor eligiendo el recuadro al que desees mirar con mayor detalle')
         st.subheader('Precios historicos')
         fig = go.Figure([
             go.Scatter(
